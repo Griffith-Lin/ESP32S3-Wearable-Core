@@ -128,7 +128,7 @@ esp_err_t Max30102_Init(void)
     if (ret != ESP_OK)
         return ret;
 
-    // 配置模式为 SpO2 + HR
+    // 配置模式为 SpO2 
     ret = Max30102_Write_Reg(REG_MODE_CONFIG, 0x03);
     if (ret != ESP_OK)
         return ret;
